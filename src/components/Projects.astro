@@ -7,6 +7,8 @@ import VueIcon from "./icons/VueIcon.astro"
 import LaravelIcon from "./icons/LaravelIcon.astro"
 import PythonIcon from "./icons/PythonIcon.astro"
 import DockerIcon from "./icons/DockerIcon.astro"
+
+const ICONS_SIZE = 32;
 ---
 
 <section id="projects" class="my-25">
@@ -18,10 +20,10 @@ import DockerIcon from "./icons/DockerIcon.astro"
            <br><br>Designed with usability in mind, it replicates key features of popular streaming platforms while maintaining a clean and minimal interface.
     
            <TechStack>
-               <VueIcon />
-               <LaravelIcon />
-               <PythonIcon />
-               <DockerIcon />
+               <VueIcon width={ICONS_SIZE} height={ICONS_SIZE} />
+               <LaravelIcon width={ICONS_SIZE} height={ICONS_SIZE} />
+               <PythonIcon width={ICONS_SIZE} height={ICONS_SIZE} />
+               <DockerIcon width={ICONS_SIZE} height={ICONS_SIZE} />
            </TechStack>
     
            <div class="flex">
