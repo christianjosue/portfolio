@@ -1,3 +1,10 @@
+---
+import GithubOfficialIcon from "./icons/GithubOfficialIcon.astro"
+import LinkedinIcon from "./icons/LinkedinIcon.astro"
+
+const ICONS_SIZE = 25
+---
+
 <main class="flex justify-center mt-20 my-30 gap-10">
     <div class="size-[100px] bg-white rounded-xl shrink-0 bg-contain bg-[url(/img/profile.jpg)]"></div>
     <div>
@@ -6,10 +13,18 @@
             <br/>Specialized in <span>PHP</span>, <span>JavaScript</span> and <span>MySQL</span>.
             <br/>I'm always learning and building.</p>
         <div class="flex items-center gap-3">
-            <a href="https://github.com/christianjosue" target="_blank"><img src="/img/github-logo.svg" alt="github icon"></a>
-            <a href="https://www.linkedin.com/in/christian-josu%C3%A9-fuentes-mu%C3%B1oz-a90985263/" target="_blank"><img src="/img/linkedin-logo.svg" alt="linkedin icon"></a>
-            <a href="mailto:christianjosuefuentes@gmail.com" target="_blank"><img src="/img/mail-logo.svg" alt="mail icon"></a>
-            <a href="" target="_blank"><img src="/img/curriculum.svg" alt="curriculum icon"></a>
+            <a href="https://github.com/christianjosue" target="_blank">
+                <GithubOfficialIcon width={ICONS_SIZE} height={ICONS_SIZE} />
+            </a>
+            <a href="https://www.linkedin.com/in/christian-josu%C3%A9-fuentes-mu%C3%B1oz-a90985263/" target="_blank">
+                <LinkedinIcon width={ICONS_SIZE} height={ICONS_SIZE} />
+            </a>
+            <a href="mailto:christianjosuefuentes@gmail.com" target="_blank">
+                <img src="/img/mail-logo.svg" alt="mail icon">
+            </a>
+            <a href="" target="_blank">
+                <img src="/img/curriculum.svg" alt="curriculum icon">
+            </a>
         </div>
     </div>
 </main>
